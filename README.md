@@ -1,3 +1,6 @@
+<img width="1918" height="1086" alt="image" src="https://github.com/user-attachments/assets/ca91124d-99c9-43a1-ba6e-9d7b38611f64" />
+
+
 # 🎮 Tic-Tac-Toe
 
 A simple and interactive **Tic-Tac-Toe** game built as a **practice project** to strengthen JavaScript, HTML, and CSS fundamentals. The game features smooth gameplay, animated win detection, and a fully responsive design that works across desktops, tablets, and mobile devices.
