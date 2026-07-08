@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #360434;
+  color: white;
+  height: 60px;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+
+}
+
+.gameContainer {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 50px;
+  position: relative;
+}
+
+.box {
+  border: 2px solid rgb(56, 8, 58);
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: #b270ad;
+  cursor: pointer;
+}
+
+.gameInfo {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0 34px;
+}
+
+.imgbox img {
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #c79acb;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+
+  background:
+    radial-gradient(circle at 20% 20%, #a83f88 0%, transparent 30%),
+    radial-gradient(circle at 80% 25%, #571c93 0%, transparent 35%),
+    radial-gradient(circle at 75% 80%, #201224 0%, transparent 30%),
+    radial-gradient(circle at 30% 85%, #3f2d4d 0%, transparent 35%),
+    linear-gradient(135deg, #d8b0e8, #9e3db1, #d7a9e5);
+
+  filter: blur(90px);
+  transform: scale(1.2);
+}
+
+#reset {
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+#reset::after {
+  content: '';
+  background: linear-gradient(45deg, #33083e, #300823, #4e2857, #43489f, #083a37, #2b65ff, #8000ff, #441d30, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  border-radius: 12px;
+}
+
+#reset::before {
+
+  content: "";
+  background: linear-gradient(45deg,
+      #33083e,
+      #300823,
+      #4e2857,
+    )
+}
+
+#reset:hover {
+  box-shadow: 0 0 50px #671565;
+}
+
+#reset:active {
+  color: #671565;
+}
+
+#reset {
+  display: block;
+  margin-top: 3vw;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5vw;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.8vw;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+}
+
+.info {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 10vw;
+  display: flex;
+}
+
+#reset {
+  margin-top: 10vw;
+}
+
+.line {
+  background-color: #360434;
+  height: 3px;
+  width: 0;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: 1s ease;
+
+}
+
+@media screen and (max-width: 800px) {
+  .gameContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
+    margin-top: 20px;
+  }
+
+  .gameInfo {
+    text-align: center;
+    padding: 0;
+  }
+
+  h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6.8vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+  }
+
+  .info {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6.5vw;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #reset {
+    display: block;
+    margin-top: 3vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4.5vw;
+    align-items: center;
+    display: math;
+    margin-top: 10vw;
+  }
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 3px;
+  background: #360434;
+  opacity: 0;
+  transform-origin: left center;
+  transition: width 0.8s ease, transform 0.8s ease, opacity 0.3s ease;
+}
