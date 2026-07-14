@@ -24,7 +24,7 @@ A simple and interactive **Tic-Tac-Toe** game built as a **practice project** to
 * ✨ Winning line animation
 * 🔄 Reset game functionality
 * 📱 Fully responsive design
-* 🎨 Clean and modern user interface
+* 🎨 Clean and modern UI
 * ⚡ Smooth animations and transitions
 
 ---
