@@ -11,7 +11,7 @@
 
 # 🎮 Tic-Tac-Toe
 
-A simple and interactive **Tic-Tac-Toe** game built as a **practice project** to strengthen JavaScript, HTML, and CSS fundamentals. The game features smooth gameplay, animated win detection, and a fully responsive design that works across desktops, tablets, and mobile devices.
+A simple and interactive **Tic-Tac-Toe** game built as a **practice project** to strengthen vanilla JavaScript, HTML, and CSS fundamentals. The game features smooth gameplay, animated win detection, and a fully responsive design that works across desktops, tablets, and mobile devices.
 
 🌐 **Live Demo:** https://tic-tac-toe-alpha-bay-23.vercel.app/
 
